@@ -9,7 +9,10 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      repo: amperl/vabamorf:alpine
+      repo: amperl/vabamorf
+      tags:
+        - latest
+        - alpine
   - name: publish amperl/vabamorf:python3.7
     image: plugins/docker
     settings:
@@ -19,3 +22,5 @@ steps:
         from_secret: docker_password
       dockerfile: Dockerfile-python37
       repo: amperl/vabamorf
+      tags:
+        - python3.7
