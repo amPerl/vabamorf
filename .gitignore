@@ -1,0 +1,12 @@
+# compile artifacts
+apps/cmdline/project/unix/etana*
+apps/cmdline/project/unix/etdisamb*
+apps/cmdline/project/unix/etsyn*
+apps/cmdline/project/unix/etyhh*
+apps/cmdline/project/unix/fsc*
+apps/cmdline/project/unix/json*
+apps/cmdline/project/unix/proof*
+apps/cmdline/project/unix/stlspeller*
+apps/cmdline/project/unix/vmeta*
+apps/cmdline/project/unix/vmyhh*
+apps/cmdline/project/unix/*.dct
