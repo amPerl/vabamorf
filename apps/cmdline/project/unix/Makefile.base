@@ -1,7 +1,7 @@
 # muutujad (globaalsed)
 CC=g++
-FLAGS=-O2 -DNDEBUG -std=gnu++0x -fno-delete-null-pointer-checks -pthread -fdata-sections -ffunction-sections -Wl,--gc-sections
-FLAGS_DB=-ggdb  -D_DEBUG -fno-inline -std=gnu++0x -fno-delete-null-pointer-checks -pthread -fdata-sections -ffunction-sections -Wl,--gc-sections
+FLAGS=-O2 -DUNIX -DNDEBUG -std=gnu++0x -fno-delete-null-pointer-checks -pthread -fdata-sections -ffunction-sections -Wl,-dead_strip
+FLAGS_DB=-ggdb -DUNIX -D_DEBUG -fno-inline -std=gnu++0x -fno-delete-null-pointer-checks -pthread -fdata-sections -ffunction-sections -Wl,-dead_strip
 ROOTDIR=../../../..
 
 # funktsioonid
