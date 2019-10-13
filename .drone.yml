@@ -2,11 +2,20 @@ kind: pipeline
 name: default
 
 steps:
-  - name: publish docker image
+  - name: publish amperl/vabamorf:alpine
     image: plugins/docker
     settings:
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
+      repo: amperl/vabamorf:alpine
+  - name: publish amperl/vabamorf:python3.7
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile-python37
       repo: amperl/vabamorf
